@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact Record App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <div class = "main-container">
+            <!-- input record -->
+            <div class = "record-input">
+                <h2>Contact Details</h2>
+                <div class = "entry-form">
+                    <form>
+                        <label for = "name">Name</label>
+                        <input type = "text" id = "name">
+
+                        <label for = "address">Address</label>
+                        <input type = "text" id = "address">
+
+                        <label for = "contact-num">Contact Number</label>
+                        <input type = "text" id = "contact-num">
+                    </form>
+
+                    <!-- alert message -->
+                    <span class = "message"></span>
+
+                    <div class = "input-btns">
+                        <button type = "submit" id = "submit-btn">
+                            <span>
+                                <i class = "fas fa-plus"></i>
+                            </span> Add Contact
+                        </button>
+
+                        <button type = "button" id = "cancel-btn">
+                            <span>
+                                <i class = "fas fa-times"></i>
+                            </span> Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- display record -->
+            <div class = "record-display">
+                <h2>Available Contacts: </h2>
+                <!-- reset btn -->
+                <button type = "button" id = "reset-btn">
+                    Reset
+                </button>
+
+                <div class = "record-container">
+                    <!-- single record -->
+                    <!--
+                    <div class = "record-item">
+                        <div class = "record-el">
+                            <span id = "labelling">Contact ID: </span>
+                            <span id = "contact-id-content">1</span>
+                        </div>
+
+                        <div class = "record-el">
+                            <span id = "labelling">Name: </span>
+                            <span id = "name-content">John Doe</span>
+                        </div>
+
+                        <div class = "record-el">
+                            <span id = "labelling">Address: </span>
+                            <span id = "address-content">Ohio</span>
+                        </div>
+
+                        <div class = "record-el">
+                            <span id = "labelling">Contact Number: </span>
+                            <span id = "contact-num-content">123-456-7890</span>
+                        </div>
+
+                        <button type = "button" id = "delete-btn">
+                            <span>
+                                <i class = "fas fa-trash"></i>
+                            </span> Delete
+                        </button>
+                    </div>
+                    -->
+                    <!-- end of single record -->
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- JS file -->
+        <script src = "script.js"></script>
+    </body>
+</html>
